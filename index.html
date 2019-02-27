@@ -8,6 +8,41 @@
   
   
       <link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+
+.mobileShow { display: none;}
+
+/* Smartphone Portrait and Landscape */
+
+@media only screen
+
+and (min-device-width : 320px)
+
+and (max-device-width : 480px){ 
+
+.mobileShow {display: inline;}
+
+}
+
+</style>
+
+
+
+<style type="text/css">
+
+.mobileHide { display: inline; }
+
+/* Smartphone Portrait and Landscape */
+
+@media only screen
+
+and (min-device-width : 320px)
+
+and (max-device-width : 480px){
+
+.mobileHide { display: none;}
+
+}
 
    
 </head>
@@ -16,7 +51,7 @@
     
    
     
- 
+ <div class="mobileHide“>
     
   <div id="container">
   <img src="bg.jpg" />
@@ -43,8 +78,14 @@
     
     
     </div>
+    </div>
     
-    
+  
+  <div class="mobileShow">
+  
+   <a class="neu" href="https://facebook.com/sinu" target="_blank" <=="" a=""><img src="https://raw.githubusercontent.com/peterobama/sinu_data/gh-pages/about.png" onmouseover="this.src='https://raw.githubusercontent.com/peterobama/sinu_data/gh-pages/about_2.png'" onmouseout="this.src='https://raw.githubusercontent.com/peterobama/sinu_data/gh-pages/about.png'" a="">
+  
+  </div>
     
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
